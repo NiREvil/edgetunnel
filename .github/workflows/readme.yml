@@ -18,10 +18,6 @@ jobs:
       - name: Adding README - English
         uses: dephraiim/translate-readme@main
         with:
-          LANG: en
-      - name: Adding README - Persian
-        uses: dephraiim/translate-readme@main
-        with:
           LANG: fa
       - name: Adding README - Turkish
         uses: dephraiim/translate-readme@main
