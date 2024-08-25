@@ -44,8 +44,8 @@ Telegram iletişim grubu:[@CMLiussss](https://t.me/CMLiussss)
 <summary><code><strong>「 I'm not a newbie! I'm really, really not a newbie! I want to try some tricks! I want to start playing with advanced techniques! 」</strong></code></summary>
 
 4.  kendininkini kullan`Preferred domain name`/`BestIP`Şunun için abonelikler:
-    -   Kendi tercih ettiğiniz alan adını veya kendi tercih ettiğiniz IP'yi kullanmak istiyorsanız, şu adrese başvurabilirsiniz:[WorkerVless2sub GitHub deposu](https://github.com/cmliu/WorkerVless2sub)içindeki dağıtım talimatlarına göre kendiniz oluşturun.
-    -   Açık[işçi.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js)dosya, 12. satırda bulundu`sub`değişkeni seçin ve konuşlandırılan abonelik oluşturucunuzun adresine göre değiştirin. Örneğin`let sub = 'sub.cmliussss.workers.dev';`, https gibi protokol bilgilerini ve simgeleri eklememeye dikkat edin.
+    -   Kendi tercih ettiğiniz alan adını veya kendi tercih ettiğiniz IP'yi kullanmak istiyorsanız, şu adrese başvurabilirsiniz:[WorkerVless2sub GitHub deposu](https://github.com/cmliu/WorkerVless2sub).txt dosyasındaki dağıtım talimatlarına göre kendiniz oluşturun.
+    -   Açık[işçi.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js)dosya, 12. satırda bulundu`sub`değişkeni seçin ve bunu dağıtılan abonelik oluşturucunuzun adresine göre değiştirin. Örneğin`let sub = 'sub.cmliussss.workers.dev';`, https gibi protokol bilgilerini ve simgeleri eklememeye dikkat edin.
     -   Kendi abonelik adresinizi kullanırsanız abonelik oluşturucunun`sub`alan adı ve`[YOUR-WORKER-URL]`Alan adı aynı üst düzey alan adına ait değil, aksi takdirde bir istisna oluşacaktır. Yapabilirsiniz`sub`Değişkene,workers.dev'e atanan alan adı atanır.
 
 </details>
@@ -106,7 +106,7 @@ Telegram iletişim grubu:[@CMLiussss](https://t.me/CMLiussss)
 3.  CNAME özel alan adını Sayfalara bağlayın:[Video eğitimi](https://www.youtube.com/watch?v=LeT4jQUh8ok&t=851s)
     -   Sayfalar konsolunda`自定义域`sekme, aşağıya tıklayın`设置自定义域`。
     -   Özel ikincil alan adınızı girin, kök alan adınızı kullanmamaya dikkat edin, örneğin:
-        Size atanan alan adı`fuck.cloudns.biz`ardından doldurulacak özel bir alan ekleyin`lizi.fuck.cloudns.biz`İşte bu;
+        Size atanan alan adı`fuck.cloudns.biz`, ardından doldurulacak özel bir alan ekleyin`lizi.fuck.cloudns.biz`İşte bu kadar;
     -   Cloudflare gereksinimlerine göre alan adı DNS servis sağlayıcınız iade edilecek ve özel alan adı eklenecektir.`lizi`CNAME kaydı`edgetunnel.pages.dev`Bundan sonra tıklayın`激活域`İşte bu.
     -   **Eğer acemiyseniz, sayfalarınız bağlayıcıdır`自定义域`Bundan sonra doğrudan yola çıkabilirsiniz, daha fazla bakmanıza gerek yok! ! !**
 
@@ -114,7 +114,7 @@ Telegram iletişim grubu:[@CMLiussss](https://t.me/CMLiussss)
 <summary><code><strong>「 我不是小白！我真的真的不是小白！我要玩花活！我要开启高端玩法！ 」</strong></code></summary>
 
 4.  kendininkini kullan`优选域名`/`优选IP`Şunun için abonelikler:
-    -   Kendi tercih ettiğiniz alan adını veya kendi tercih ettiğiniz IP'yi kullanmak istiyorsanız, şu adrese başvurabilirsiniz:[WorkerVless2sub GitHub deposu](https://github.com/cmliu/WorkerVless2sub)içindeki dağıtım talimatlarına göre kendiniz oluşturun.
+    -   Kendi tercih ettiğiniz alan adını veya kendi tercih ettiğiniz IP'yi kullanmak istiyorsanız, şu adrese başvurabilirsiniz:[WorkerVless2sub GitHub deposu](https://github.com/cmliu/WorkerVless2sub).txt dosyasındaki dağıtım talimatlarına göre kendiniz oluşturun.
     -   Sayfalar konsolunda`设置`sekme, seç`环境变量`>`制作`>`编辑变量`>`添加变量`；
     -   Değişken adı şu şekilde ayarlandı:`SUB`karşılık gelen değer, dağıttığınız abonelik oluşturucunun adresidir. Örneğin`sub.cmliussss.workers.dev`, ardından tıklayın**kale**。
     -   Daha sonra Sayfalar konsolunda`部署`sekme, seç`所有部署`>`最新部署最右的 ...`>`重试部署`, işte bu.
