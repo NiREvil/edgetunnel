@@ -44,7 +44,7 @@
 <summary><code><strong>「 I'm not a newbie! I'm really, really not a newbie! I want to try some tricks! I want to start playing with advanced techniques! 」</strong></code></summary>
 
 4.  از خودت استفاده کن`Preferred domain name`/`BestIP`اشتراک برای:
-    -   اگر می خواهید از نام دامنه دلخواه خود یا IP دلخواه خود استفاده کنید، می توانید به آن مراجعه کنید[مخزن WorkerVless2sub GitHub](https://github.com/cmliu/WorkerVless2sub)خودتان آن را مطابق دستورالعمل‌های استقرار در بسازید.
+    -   اگر می خواهید از نام دامنه دلخواه خود یا IP دلخواه خود استفاده کنید، می توانید به آن مراجعه کنید[مخزن WorkerVless2sub GitHub](https://github.com/cmliu/WorkerVless2sub)آن را خودتان طبق دستورالعمل‌های استقرار در بسازید.
     -   باز کنید[worker.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js)فایل، در خط 12 یافت شد`sub`متغیر و آن را به آدرس مولد اشتراک مستقر خود تغییر دهید. به عنوان مثال`let sub = 'sub.cmliussss.workers.dev';`، مراقب باشید اطلاعات پروتکل و نمادهایی مانند https را وارد نکنید.
     -   توجه داشته باشید که اگر از آدرس اشتراک خود استفاده می کنید، از آدرس مولد اشتراک`sub`نام دامنه و`[YOUR-WORKER-URL]`نام دامنه به همان نام دامنه سطح بالا تعلق ندارد، در غیر این صورت یک استثنا رخ خواهد داد. شما می توانید`sub`به متغیر، نام دامنه اختصاص داده شده به working.dev اختصاص داده شده است.
 
@@ -55,7 +55,7 @@
 1.  استقرار صفحات Cloudflare:
     -   دانلود کنید[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)فایل و ستاره کلیک کنید!!!
     -   در کنسول Cloudflare Pages انتخاب کنید`Upload assets`در نهایت، نام پروژه خود را بگذارید و کلیک کنید`Create a project`و سپس فایل دانلود شده را آپلود کنید[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)بعد از فایل کلیک کنید`Deployment Site`。
-    -   پس از اتمام استقرار، کلیک کنید`Continue processing site`پس از آن، را انتخاب کنید`set up`>`Environment variables`>**ساختن**تعریف متغیرها برای تولید >`Add variables`.
+    -   پس از اتمام استقرار، کلیک کنید`Continue processing site`پس از آن، را انتخاب کنید`set up`>`Environment variables`>**ساختن** Define variables for production > `Add variables`.
         نام متغیر را پر کنید**UUID**، مقدار UUID شما است، سپس کلیک کنید`keep`همین است.
     -   بازگشت`Deploy`برگه، در گوشه پایین سمت راست کلیک کنید`Create a New Deployment`سپس دوباره آپلود کنید[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)بعد از فایل کلیک کنید`Save and deploy`همین است.
 
@@ -93,7 +93,7 @@
 
 1.  استقرار صفحات Cloudflare:
     -   این پروژه را در Github فورک کنید و ستاره را کلیک کنید!!!
-    -   در کنسول Cloudflare Pages انتخاب کنید`连接到 Git`پس از آن، را انتخاب کنید`edgetunnel`بعد از مورد کلیک کنید`开始设置`。
+    -   در کنسول Cloudflare Pages انتخاب کنید`连接到 Git`پس از آن، را انتخاب کنید`edgetunnel`بعد از آیتم کلیک کنید`开始设置`。
     -   وجود داشته باشد`设置构建和部署`در پایین صفحه، را انتخاب کنید`环境变量（高级）`بعدا ادغام شوند`添加变量`نام متغیر را پر کنید**UUID**، مقدار UUID شما است، سپس کلیک کنید`保存并部署`همین است.
 
 2.  دسترسی به محتوای اشتراک:
@@ -114,7 +114,7 @@
 <summary><code><strong>「 我不是小白！我真的真的不是小白！我要玩花活！我要开启高端玩法！ 」</strong></code></summary>
 
 4.  از خودت استفاده کن`优选域名`/`优选IP`اشتراک برای:
-    -   اگر می خواهید از نام دامنه دلخواه خود یا IP دلخواه خود استفاده کنید، می توانید به آن مراجعه کنید[مخزن WorkerVless2sub GitHub](https://github.com/cmliu/WorkerVless2sub)خودتان آن را مطابق دستورالعمل‌های استقرار در بسازید.
+    -   اگر می خواهید از نام دامنه دلخواه خود یا IP دلخواه خود استفاده کنید، می توانید به آن مراجعه کنید[مخزن WorkerVless2sub GitHub](https://github.com/cmliu/WorkerVless2sub)آن را خودتان طبق دستورالعمل‌های استقرار در بسازید.
     -   در کنسول Pages`设置`برگه، انتخاب کنید`环境变量`>`制作`>`编辑变量`>`添加变量`；
     -   نام متغیر تنظیم شده است`SUB`، مقدار مربوطه آدرس مولد اشتراکی است که شما مستقر کرده اید. به عنوان مثال`sub.cmliussss.workers.dev`، سپس کلیک کنید**نگه دارید**。
     -   سپس در کنسول Pages`部署`برگه، انتخاب کنید`所有部署`>`最新部署最右的 ...`>`重试部署`، همین است.
@@ -133,7 +133,7 @@
 | subapi    | api.v1.mk                                                                                                                                                      | clash، singbox، و غیره باطن تبدیل اشتراک                                                                                                                                                  | [ویدئو](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1446s) |
 | SUBCONFIG | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash، singbox، و غیره. پروفایل تبدیل اشتراک                                                                                                                                              | [ویدئو](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1605s) |
 | RPROXYIP  | نادرست                                                                                                                                                         | برای اجبار به دستیابی ProxyIP اختصاص داده شده توسط مشترک روی true تنظیم کنید (نیاز به پشتیبانی مشترک دارد)                                                                                | [ویدئو](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1816s) |
-| 02        | <https://t.me/CMLiussss>                                                                                                                                       | پرش صفحه اصلی 302 (از چندین URL پشتیبانی می کند، بین URL ها استفاده می شود)`,`یا تغذیه خط به عنوان فاصله‌گذار، اگر تازه کار هستید از آن استفاده نکنید)                                    |                                                              |
+| 02        | <https://t.me/CMLiussss>                                                                                                                                       | پرش صفحه اصلی 302 (از چندین URL پشتیبانی می کند، بین URL ها استفاده می شود)`,`یا تغذیه خط به‌عنوان فاصله‌گذار، اگر تازه کار هستید از آن استفاده نکنید)                                    |                                                              |
 | URL       | <https://t.me/CMLiussss>                                                                                                                                       | پنهان کردن صفحه اصلی (از چندین URL پشتیبانی می کند، بین URL ها استفاده می شود)`,`یا خطوط به صورت فواصل زمانی شکسته می شوند، تنظیمات تصادفی به راحتی می توانند ضد تقلب را راه اندازی کنند) |                                                              |
 
 ## ستاره ها طلوع می کنند
@@ -143,7 +143,7 @@
 ## محتوای اشتراک تطبیقی ​​تطبیقی
 
 -   [v2rayN](https://github.com/2dust/v2rayN)
--   clash.meta ([clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)，[نیانپاسو را بزنید](https://github.com/keiko233/clash-nyanpasu)，~[clash-verge](https://github.com/zzzgydi/clash-verge/tree/main)~(ClashX Meta)
+-   clash.meta ([clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)，[نیانپاسو را بزنید](https://github.com/keiko233/clash-nyanpasu)，~[درگیری](https://github.com/zzzgydi/clash-verge/tree/main)~(ClashX Meta)
 -   sing-box (SFI)
 
 # سپاسگزار
