@@ -10,9 +10,9 @@
 
 这是一个基于 Cloudflare Worker 平台的脚本。在原版本的基础上修改为显示VLESS配置信息并转换为订阅内容。使用此脚本，您可以轻松地将VLESS配置信息转换为使用在线配置的Clash或Singbox等工具。
 
--   基本部署视频教程：<https://www.youtube.com/watch?v=LeT4jQUh8ok>
+-   基本部署视频教程：[HTTPS://呜呜呜.YouTube.com/watch?V=let4JQ U和8OK](https://www.youtube.com/watch?v=LeT4jQUh8ok)
 -   快速部署视频教程：[HTTPS://呜呜呜.YouTube.com/watch?V=59T HR MJ HM AW](https://www.youtube.com/watch?v=59THrmJhmAw)**_最好推荐！！！_**
--   使用透视的高级教程：<https://www.youtube.com/watch?v=s91zjpw3-P8>
+-   使用透视的高级教程：[HTTPS://呜呜呜.YouTube.com/watch?V=是91专家评委3-P8](https://www.youtube.com/watch?v=s91zjpw3-P8)
 
 Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 
@@ -26,7 +26,7 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 1.  部署 Cloudflare Worker：
     -   在 Cloudflare Worker 控制台中创建一个新 Worker。
     -   将要[工人.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js)将内容粘贴到 Worker 编辑器中。
-    -   换乘7号线`userID`修改为你自己的**通用唯一标识符**。
+    -   换乘7号线`userID`修改为你自己的**通用唯一识别码**。
 
 2.  访问订阅内容：
     -   使用权`https://[YOUR-WORKERS-URL]/[UUID]`订阅内容可用。
@@ -46,7 +46,7 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 4.  用你自己的`Preferred domain name`/`BestIP`订阅：
     -   如果您想使用自己喜欢的域名或者自己喜欢的IP，可以参考[WorkerVless2sub GitHub 存储库](https://github.com/cmliu/WorkerVless2sub)按照 中的部署说明自行构建。
     -   打开[工人.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js)文件，在第 12 行找到`sub`变量并将其修改为您部署的订阅生成器的地址。例如`let sub = 'sub.cmliussss.workers.dev';`，注意不要包含协议信息和https等符号。
-    -   请注意，如果您使用自己的订阅地址，则订阅生成器的`sub`域名和`[YOUR-WORKER-URL]`域名不能属于同一个顶级域名，否则会出现异常。你可以`sub`该变量被分配了分配给workers.dev 的域名。
+    -   请注意，如果您使用自己的订阅地址，则订阅生成器的`sub`域名和`[YOUR-WORKER-URL]`域名不能属于同一个顶级域名，否则会出现异常。你可以`sub`该变量被分配给workers.dev 的域名。
 
 </details>
 
@@ -56,7 +56,7 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
     -   下载[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)文件并点击星标！！！
     -   在 Cloudflare Pages 控制台中选择`Upload assets`最后，为您的项目命名并单击`Create a project`，然后上传下载的[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)单击文件后`Deployment Site`。
     -   部署完成后，点击`Continue processing site`之后，选择`set up`>`Environment variables`>**制作**定义生产变量 >`Add variables`。
-        填写变量名**通用唯一标识符**，值为你的UUID，然后点击`keep`就是这样。
+        填写变量名**通用唯一识别码**，值为你的UUID，然后点击`keep`就是这样。
     -   返回`Deploy`选项卡，单击右下角`Create a New Deployment`然后重新上传[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)单击文件后`Save and deploy`就是这样。
 
 2.  访问订阅内容：
@@ -94,7 +94,7 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 1.  部署 Cloudflare 页面：
     -   在 Github 上分叉这个项目并点击 Star！
     -   在 Cloudflare Pages 控制台中选择`连接到 Git`之后，选择`edgetunnel`单击该项目后`开始设置`。
-    -   存在`设置构建和部署`在页面底部，选择`环境变量（高级）`稍后合并`添加变量`填写变量名**通用唯一标识符**，值为你的UUID，然后点击`保存并部署`就是这样。
+    -   存在`设置构建和部署`在页面底部，选择`环境变量（高级）`稍后合并`添加变量`填写变量名**通用唯一识别码**，值为你的UUID，然后点击`保存并部署`就是这样。
 
 2.  访问订阅内容：
     -   使用权`https://[YOUR-PAGES-URL]/[YOUR-UUID]`订阅内容可用。
@@ -126,15 +126,15 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)
 
 | 变量名     | 例子                                                                                                                                                             | 评论                                                             | 油田                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------- |
-| 通用唯一标识符 | 90SD4AH-141A-43SS-991B-08263SVISES10                                                                                                                           | Powershell -NoExit -命令“[指导]&#x3A;:NewGuid()"                   | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=72s)   |
-| 代理IP    | proxyip.fxxk.dedyn.io                                                                                                                                          | 替代作为访问CloudFlareCDN站点的代理节点（支持多个ProxyIP，在ProxyIP之间使用`,`或换行作为间隔） | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=166s)  |
+| 通用唯一识别码 | 90SD4AH-141A-43SS-991B-08263SVISES10                                                                                                                           | Powershell -NoExit -命令“[指导]&#x3A;:NewGuid()"                   | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=72s)   |
+| 代理IP    | proxy IP.法学学科.的第一年.IO                                                                                                                                          | 替代作为访问CloudFlareCDN站点的代理节点（支持多个ProxyIP，在ProxyIP之间使用`,`或换行作为间隔） | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=166s)  |
 | 袜子5     | 用户：[password@127.0.0.1](mailto:password@127.0.0.1):1080                                                                                                        | 首选作为访问 CloudFlareCDN 站点的 SOCKS5 代理                             | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=826s)  |
 | 子系统     | sub.cmliussss.workers.dev                                                                                                                                      | 内置域名和IP节点信息的订阅生成器地址                                            | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1193s) |
-| 子API    | API.V1.门口                                                                                                                                                      | crash、singbox等订阅转化后端                                           | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1446s) |
+| 子API    | API.V1.门口                                                                                                                                                      | clang、singbox等订阅转化后端                                           | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1446s) |
 | 子配置     | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | crash、singbox 等订阅转化配置文件                                        | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1605s) |
 | 代理IP    | 错误的                                                                                                                                                            | 设置为true强制获取订阅者分配的ProxyIP（需要订阅者支持）                              | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1816s) |
-| 02      | <https://t.me/CMLiussss>                                                                                                                                       | 首页302跳转（支持多个URL，用于URL之间）`,`或者换行作为间隔符，如果您是新手，请不要使用它）            |                                                           |
-| 网址      | [HTTPS://他.么/C ml IU SSSS](https://t.me/CMLiussss)                                                                                                             | 主页伪装（支持多个URL，在URL之间使用）`,`或者换行作为间隔，随机设置很容易触发反欺诈）                |                                                           |
+| 02      | [HTTPS://他.么/C ml IU SSSS](https://t.me/CMLiussss)                                                                                                             | 首页302跳转（支持多个URL，用于URL之间）`,`或者换行作为间隔符，如果您是新手，请不要使用它）            |                                                           |
+| 网址      | <https://t.me/CMLiussss>                                                                                                                                       | 主页伪装（支持多个URL，在URL之间使用）`,`或者换行作为间隔，随机设置很容易触发反欺诈）                |                                                           |
 
 ## 星星星星升起
 
