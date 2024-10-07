@@ -32,7 +32,7 @@
 1.  部署 Cloudflare Worker：
     -   在 Cloudflare Worker 控制台中创建一个新 Worker。
     -   将要[工人.js](https://github.com/cmliu/edgetunnel/blob/main/_worker.js)将内容粘贴到 Worker 编辑器中。
-    -   换乘11号线`userID`修改为你自己的**通用唯一标识符**。
+    -   换乘11号线`userID`修改为你自己的**通用唯一识别码**。
 
 2.  访问订阅内容：
     -   使用权`https://[YOUR-WORKERS-URL]/[UUID]`订阅内容可用。
@@ -65,7 +65,7 @@
 1.  部署 Cloudflare 页面：
     -   下载[worker.zip](https://raw.githubusercontent.com/NiREvil/edgetunnel/main/worker.zip)文件并点击星标！！！
     -   在 Cloudflare Pages 控制台中选择`Upload assets`最后，为您的项目命名并单击`Create a project`，然后上传下载的[worker.zip](https://raw.githubusercontent.com/NiREvil/edgetunnel/main/worker.zip)单击文件后`Deployment Site`.
-    -   部署完成后，点击`Continue processing site`之后，选择`set up`>`Environment variables`>**制作**定义生产变量 >`Add variables`,填写变量名**通用唯一标识符**，值为你的UUID，然后点击`keep`就是这样。
+    -   部署完成后，点击`Continue processing site`之后，选择`set up`>`Environment variables`>**制作**定义生产变量 >`Add variables`,填写变量名**通用唯一识别码**，值为你的UUID，然后点击`keep`就是这样。
     -   返回`Deploy`选项卡，单击右下角`Create a New Deployment`然后重新上传[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)单击文件后`Save and deploy`就是这样。
 
 2.  访问订阅内容：
@@ -106,7 +106,7 @@
 1.  部署 Cloudflare 页面：
     -   在 Github 上分叉这个项目并点击 Star！
     -   在 Cloudflare Pages 控制台中选择`Connect to Git`之后，选择`edgetunnel`单击该项目后`Start setting up`.
-    -   存在`Setting up build and deployment`在页面底部，选择`Environment variables (advanced)`稍后合并`Add variables`填写变量名**通用唯一标识符**，值为你的UUID，然后点击`Save and deploy`就是这样。
+    -   存在`Setting up build and deployment`在页面底部，选择`Environment variables (advanced)`稍后合并`Add variables`填写变量名**通用唯一识别码**，值为你的UUID，然后点击`Save and deploy`就是这样。
 
 2.  访问订阅内容：
     -   使用权`https://[YOUR-PAGES-URL]/[YOUR-UUID]`订阅内容可用。
@@ -116,7 +116,7 @@
     -   例如`https://edgetunnel.pages.dev/90cd4a77-141a-43c9-991b-08263cfe9c10?sb`singbox订阅格式，适用于singbox等
 
 3.  将 CNAME 自定义域绑定到页面：[视频教程](https://www.youtube.com/watch?v=LeT4jQUh8ok&t=851s)
-    -   In the Pages console `custom domain`选项卡，单击下面`Set up a custom domain`。
+    -   在页面控制台中`custom domain`选项卡，单击下面`Set up a custom domain`。
     -   填写您的自定义二级域名，注意不要使用您的根域名，例如：
         您分配的域名是`fuck.cloudns.biz`，然后添加自定义字段来填写`lizi.fuck.cloudns.biz`就是这样;
     -   根据Cloudflare的要求，将返回您的域名DNS服务商并添加自定义域名。`lizi`CNAME 记录`edgetunnel.pages.dev`之后，单击`Activate Domain`就是这样。
@@ -127,7 +127,7 @@
 
 4.  用你自己的`Preferred domain name / Preferred IP`订阅：
     -   如果您想使用自己喜欢的域名或者自己喜欢的IP，可以参考[WorkerVless2sub GitHub 存储库](https://github.com/cmliu/WorkerVless2sub)按照 中的部署说明自行构建。
-    -   在页面控制台中`set up`选项卡，选择`set up` > `make`>`Edit variables`>`add variable`；
+    -   在页面控制台中`set up`选项卡，选择`set up`>`make`>`Edit variables`>`add variable`；
     -   变量名称设置为`SUB`，对应的值为您部署的订阅生成器的地址。例如`sub.cmliussss.workers.dev`，然后单击**保持**。
     -   然后在页面控制台中`deploy`选项卡，选择`All deployments`>`The latest deployment is the rightmost ...`>`Retry deployment`， 就是这样。
     -   请注意，如果您使用自己的订阅地址，则订阅生成器的`SUB`域名和`[YOUR-PAGES-URL]`域名不能属于同一个顶级域名，否则会出现异常。你可以`SUB`该变量被分配给 Pages.dev 的域名。
@@ -136,11 +136,11 @@
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
-## 变量说明
+## 变量描述
 
 | 变量名         | 例子                                                                                                                                                                 | 必需的 | 评论                                                                                                                                    | YouTube                                                   |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| 通用唯一标识符     | `90cd4a77-141a-43c9-991b-08263cfe9c10`                                                                                                                             | ✅   | 如何生成自己的UUID：<https://www.uuidgenerator.net/>                                                                                          | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=72s)   |
+| 通用唯一识别码     | `90cd4a77-141a-43c9-991b-08263cfe9c10`                                                                                                                             | ✅   | 如何生成自己的UUID：<https://www.uuidgenerator.net/>                                                                                          | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=72s)   |
 | 代理IP        | `bpb.radically.pro`                                                                                                                                                | ✅   | 替代作为访问CloudFlareCDN站点的代理节点（支持多个ProxyIP，在ProxyIP之间使用，或换行作为间隔）。[访问这里](https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md)查找代理IP。 | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=166s)  |
 | 袜子5         | `user:password@127.0.0.1:1080`                                                                                                                                     | ❌   | 优先作为 SOCKS5 代理访问 CFCDN 站点                                                                                                             | [视频](https://www.youtube.com/watch?v=s91zjpw3-P8&t=826s)  |
 | 添加          | `zula.ir:2053#preferred name`                                                                                                                                      | ❌   | 本地首选TLS域名/首选IP（支持多个元素，或换行符作为分隔符）                                                                                                      |                                                           |
