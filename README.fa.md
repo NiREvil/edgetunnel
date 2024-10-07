@@ -43,7 +43,7 @@
 
 3.  یک دامنه سفارشی را به کارگران متصل کنید:
     -   در کنسول کارگران`trigger`برگه، در زیر کلیک کنید`Add a custom domain`。
-    -   نام دامنه ثانویه ای را که به سرویس حل نام دامنه CloudFlare منتقل کرده اید را وارد کنید، به عنوان مثال:`vless.google.com`بعد از کلیک`Add a custom domain`، فقط منتظر بمانید تا گواهی اجرا شود.
+    -   نام دامنه ثانویه را که به سرویس حل نام دامنه CloudFlare منتقل کرده اید را وارد کنید، به عنوان مثال:`vless.google.com`پس از کلیک`Add a custom domain`، فقط منتظر بمانید تا گواهی اجرا شود.
     -   **اگر تازه‌کار هستید، می‌توانید هم‌اکنون مستقیماً بدون نگاه کردن به زمین بلند شوید! ! !**
 
 <details>
@@ -65,8 +65,8 @@
 1.  استقرار صفحات Cloudflare:
     -   دانلود کنید[worker.zip](https://raw.githubusercontent.com/NiREvil/edgetunnel/main/worker.zip)فایل و ستاره کلیک کنید!!!
     -   در کنسول Cloudflare Pages انتخاب کنید`Upload assets`در نهایت، نام پروژه خود را بگذارید و کلیک کنید`Create a project`و سپس فایل دانلود شده را آپلود کنید[worker.zip](https://raw.githubusercontent.com/NiREvil/edgetunnel/main/worker.zip)بعد از فایل کلیک کنید`Deployment Site`.
-    -   پس از اتمام استقرار، کلیک کنید`Continue processing site`پس از آن، را انتخاب کنید`set up` > `Environment variables`>**ساختن**تعریف متغیرهای تولید >`Add variables`، نام متغیر را پر کنید**UUID**، مقدار UUID شما است، سپس کلیک کنید`keep`همین است.
-    -   بازگشت`Deploy`برگه، در گوشه پایین سمت راست کلیک کنید`Create a New Deployment`سپس دوباره آپلود کنید[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)بعد از فایل کلیک کنید`Save and deploy`همین است.
+    -   پس از اتمام استقرار، کلیک کنید`Continue processing site`پس از آن، را انتخاب کنید`set up`>`Environment variables`>**ساختن**تعریف متغیرهای تولید >`Add variables`، نام متغیر را وارد کنید**UUID**، مقدار UUID شما است، سپس کلیک کنید`keep`همین است.
+    -   بازگشت`Deploy`برگه، در گوشه سمت راست پایین کلیک کنید`Create a New Deployment`سپس دوباره آپلود کنید[worker.zip](https://raw.githubusercontent.com/cmliu/edgetunnel/main/worker.zip)بعد از فایل کلیک کنید`Save and deploy`همین است.
 
 2.  دسترسی به محتوای اشتراک:
     -   دسترسی داشته باشید`https://[YOUR-PAGES-URL]/[YOUR-UUID]`محتوای اشتراک در دسترس است.
@@ -154,9 +154,9 @@
 | زیر               | `VLESS.fxxk.dedyn.io`                                                                                                                                              | ❌         | آدرس مولد اشتراک نام دامنه داخلی و اطلاعات گره IP                                                                                                                                                                                                          | [ویدئو](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1193s) |
 | SUBAPI            | `SUBAPI.fxxk.dedyn.io`                                                                                                                                             | ❌         | باطن های تبدیل اشتراک مانند کلش، singbox و غیره.                                                                                                                                                                                                           | [ویدئو](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1446s) |
 | SUBCONFIG         | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini) | ❌         | فایل های پیکربندی تبدیل اشتراک برای کلش، singbox و غیره.                                                                                                                                                                                                   | [ویدئو](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1605s) |
-| RPROXYIP          | `false`                                                                                                                                                            | ❌         | برای اجبار به دستیابی به ProxyIP اختصاص داده شده توسط مشترک روی true تنظیم کنید (پشتیبانی مشترک مورد نیاز است))                                                                                                                                            | [ویدئو](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1816s) |
+| RPROXYIP          | `false`                                                                                                                                                            | ❌         | برای اجبار به دستیابی ProxyIP اختصاص داده شده توسط مشترک روی true تنظیم کنید (پشتیبانی مشترک مورد نیاز است))                                                                                                                                               | [ویدئو](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1816s) |
 | CFEMAIL           | `admin@gmail.com`                                                                                                                                                  | ❌         | آدرس ایمیل حساب CF (CFKEYپس از پر کردن هر دو، اطلاعات اشتراک میزان استفاده درخواستی را نشان می دهد، بنابراین افراد تازه کار نباید از این مورد استفاده کنند)                                                                                                |                                                              |
-| CFKEY             | `c6a944b5c956b6c18c2352880952bced8b85e`                                                                                                                            | ❌         | کلید جهانی API حساب CF (CFEMAIL پس از پر کردن هر دو، اطلاعات اشتراک میزان استفاده درخواستی را نشان می دهد، بنابراین افراد تازه کار نباید از آن استفاده کنند)                                                                                               |                                                              |
+| CFKEY             | `c6a944b5c956b6c18c2352880952bced8b85e`                                                                                                                            | ❌         | کلید جهانی API حساب CF (CFEMAIL پس از پر کردن هر دو، اطلاعات اشتراک میزان استفاده درخواستی را نشان می دهد، بنابراین افراد تازه کار نباید از این مورد استفاده کنند)                                                                                         |                                                              |
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
@@ -180,7 +180,7 @@
     https://edgetunnel.pages.dev/90cd4a77-141a-43c9-991b-08263cfe9c10?sub=VLESS.fxxk.dedyn.io
     ```
 
-**گره های مستقر شده توسط این پروژه را می توان از طریق گره PATH (مسیر) دسترسی داشت. از مسیر مشخص شده استفاده کنید`PROXYIP`یا`SOCKS5`！！！**
+**گره های مستقر شده توسط این پروژه از طریق گره PATH (مسیر) قابل دسترسی هستند. از مسیر مشخص شده استفاده کنید`PROXYIP`یا`SOCKS5`！！！**
 
 -   تعیین`PROXYIP`مورد
     ```url
