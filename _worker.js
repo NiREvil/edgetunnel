@@ -1,6 +1,6 @@
 /**
 * @ts-nocheck   <!--GAMFC-->version base on commit 43fad05dcdae3b723c53c226f8181fc5bd47223e, time is 2023-06-22 15:20:02 UTC<!--GAMFC-END-->.
-* Last Update: 4:20 UTC - Sunday, 25 August 2024, By REvil
+* Last Update: 4:20 UTC - Sunday, 7 October 2024
 * Many thanks to https://github.com/cmliu
 */
 
@@ -11,11 +11,11 @@ import { connect } from 'cloudflare:sockets';
 let userID = '90cd4a77-141a-43c9-991b-08263cfe9c10';
 
 //Find proxyIP : https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md
-let proxyIP = '';// This address does not affect your network speed. It is for CF agents。OR use ['bpb.radically.pro', 'de.radically.pro', 'bpb.yousef.isegaro.com', 'proxyip.digitalocean.hw.090227.xyz'];
+let proxyIP = '';// This address does not affect your network speed. It is for CF agents。OR use ['bpb.radically.pro', 'bpb.yousef.isegaro.com', 'proxyip.digitalocean.hw.090227.xyz'];
 
 let sub = '';// Leave blank to use built-in subscription
 let subconverter = 'SUBAPI.fxxk.dedyn.io';// clash subscription conversion backend, currently uses CM's subscription conversion function. Comes with fake uuid and host subscription.
-let subconfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"; // Subscription Profile
+let subconfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini"; // Subscription Profile
 let subProtocol = 'https';
 // The user name and password do not contain special characters
 // Setting the address will ignore proxyIP
@@ -128,7 +128,7 @@ export default {
 					if ((!sub || sub == '') && (addresses.length + addressesapi.length + addressesnotls.length + addressesnotlsapi.length + addressescsv.length) == 0){
 						if (request.headers.get('Host').includes(".workers.dev")) {
 							sub = 'noTLS.fxxk.dedyn.io'; 
-							subconfig = env.SUBCONFIG || 'https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini';
+							subconfig = env.SUBCONFIG || 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini';
 						} else {
 							sub = 'VLESS.fxxk.dedyn.io';
 							subconfig = env.SUBCONFIG || "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini";
@@ -1256,19 +1256,25 @@ async function getVLESSConfig(userID, hostName, sub, UA, RproxyIP, _url) {
 ################################################################
 Subscription Address, Support, Base64、clash-meta、sing-box Subscription Format, ${订阅器}
 ---------------------------------------------------------------
-Fast adaptive subscription address:
-https://${proxyhost}${hostName}/${userID}
-https://${proxyhost}${hostName}/${userID}?sub
+Fast adaptive subscription address:  
+https://${proxyhost}${hostName}/${userID}  
+https://${proxyhost}${hostName}/${userID}?sub  
 
-Base64 Sublink:
-https://${proxyhost}${hostName}/${userID}?b64
-https://${proxyhost}${hostName}/${userID}?base64
+---------------------------------------------------------------
 
-Clash Subscription Address::
+Base64 Sublink:  
+https://${proxyhost}${hostName}/${userID}?b64  
+https://${proxyhost}${hostName}/${userID}?base64  
+
+---------------------------------------------------------------
+
+Clash Subscription Address::  
 https://${proxyhost}${hostName}/${userID}?clash
 
-SingBox Subscription Address::
-https://${proxyhost}${hostName}/${userID}?sb
+---------------------------------------------------------------
+
+SingBox Subscription Address::  
+https://${proxyhost}${hostName}/${userID}?sb  
 https://${proxyhost}${hostName}/${userID}?singbox
 ---------------------------------------------------------------
 ################################################################
