@@ -148,7 +148,7 @@ This is a script based on the Cloudflare Worker platform. Based on the original 
 | Variable Name | Example | Required | Remark | YouTube |
 |--------|---------|-|-----|-----|
 | UUID | `90cd4a77-141a-43c9-991b-08263cfe9c10` |✅| How to generate your own UUID: https://www.uuidgenerator.net/ | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=72s) |
-| PROXYIP | `bpp.radically.pro` |✅| Alternative as a proxy node for accessing CloudFlareCDN site (supports multiple ProxyIPs, used between ProxyIPs,or line feed as interval).  [VISIT  HERE ](https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md) to Find proxyIP. | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=166s) |
+| PROXYIP | `bpb.radically.pro` |✅| Alternative as a proxy node for accessing CloudFlareCDN site (supports multiple ProxyIPs, used between ProxyIPs,or line feed as interval).  [VISIT  HERE ](https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md) to Find proxyIP. | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=166s) |
 | SOCKS5  | `user:password@127.0.0.1:1080` |❌| Prioritize as a SOCKS5 proxy for accessing CFCDN sites | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=826s) |
 | ADD | `zula.ir:2053#preferred name` |❌| Local preferred TLS domain name/preferred IP (supports multiple elements ,or line breaks as separators) ||
 | ADDAPI | [https://raw.github.../addressesapi.txt](https://raw.githubusercontent.com/NiREvil/edgetunnel/main/addressesapi.txt) |❌| API address of the preferred IP (supports multiple elements ,or line breaks as spacing) ||
@@ -160,7 +160,7 @@ This is a script based on the Cloudflare Worker platform. Based on the original 
 | TGID | `6946912345` |❌| The digital ID of the account that receives TG notifications | 
 | SUB | `VLESS.fxxk.dedyn.io` | ❌ | Subscription generator address of built-in domain name and IP node information | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1193s) |
 | SUBAPI | `SUBAPI.fxxk.dedyn.io` |❌| Subscription conversion backends such as clash, singbox, etc. | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1446s) |
-| SUBCONFIG | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) |❌| Subscription conversion configuration files for clash, singbox, etc. | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1605s) |
+| SUBCONFIG | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini) |❌| Subscription conversion configuration files for clash, singbox, etc. | [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1605s) |
 | RPROXYIP | `false` |❌| Set to true to force the acquisition of the ProxyIP assigned by the subscriber (subscriber support required))| [Video](https://www.youtube.com/watch?v=s91zjpw3-P8&t=1816s) |
 | CFEMAIL | `admin@gmail.com` |❌| CF account email address ( CFKEYafter filling in both, the subscription information will show the requested usage, so newbies should not use this) |  |
 | CFKEY | `c6a944b5c956b6c18c2352880952bced8b85e` |❌| CF account Global API Key ( CFEMAILafter filling in both, the subscription information will show the requested usage, so newbies should not use this) |  |
